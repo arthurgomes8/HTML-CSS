@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'fonte_android';
+    src: url('fontes/IDroid.otf') format('opentype');
+    
+}
+
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.destaque{
+    color: #063d1e;
+}
+
+body{
+    background-color: #ebe5c5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main img{
+    max-width: 100%;
+}
+h2{
+    font: normal normal 2em 'fonte_android',cursive;
+}
+
+.direcionamento{
+    text-decoration: none;
+}
+
+.direcionamento:hover{
+    background-color: #2fa865;
+}
+.direcionamento::after{
+    content: "🔗";
+}
+
+.imagem{
+    display:block;
+    margin: 10px auto;
+    
+}
+
+p{
+  text-indent: 20px;
+  text-align: justify;
+  margin:  10px;
+  line-height: 2em;
+}
+
+
+
+
+
+header{
+    background-image: linear-gradient(to bottom, #2fa866,#063d1e);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header>h1{
+    font-family: "Bebas Neue", sans-serif;
+    margin: 10px 0px;
+    text-shadow: rgba(0, 0, 0, 0.255) 2px 2px 0px;
+    font-size: 3em;
+}
+
+header>p{
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: rgba(0, 0, 0, 0.144) 2px 2px 0px;
+    font-size: 1.2em;
+}
+header>nav{
+    text-align: left;
+    font-weight: bold;
+}
+
+header>nav>a{ 
+    padding: 10px;
+    text-decoration: none;
+    color: #2fa866;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+header>nav>a:hover{
+    transition-duration: 0.5s;
+    padding:12px;
+    color: #063d1e;
+    background-color: #2fa866;
+}
+
+
+
+#historia>h2{
+    color: #063d1e;
+    padding: 10px;
+}
+
+
+.titulo_especial{
+    margin: 10px;
+    color: #063d1e;
+    background-image: linear-gradient(to right,#2fa865,white);
+}
+
+#video{
+    background-color: #063d1e;
+}
+
+#video>iframe{
+    max-width: 75%;
+    height: 300px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+#curiosidades{
+   background-color: #83e1ad;
+   border-radius: 10px;
+   margin: 10px;
+}
+
+#curiosidades>h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 0px;
+    background-color: #2fa865;
+    color: white;
+}
+
+#curiosidades>ul{
+    columns: 2;
+    list-style: none;
+  
+}
+
+#curiosidades>ul>li::before{
+    content: "✔️";
+    
+}
+
+footer{
+    background-color: #063d1e;
+}
+
+footer>p{
+    text-align: center;
+    color: white;
+}
