@@ -19,7 +19,9 @@
     margin: 0px;
     padding: 0px;
 }
-
+body{
+    min-height: 100vh;
+}
 header{
     background-color: black;
     color: white;
@@ -28,10 +30,11 @@ header{
 }
 
 header h1{
-    font-family:"Passion One";
+    font-family:var(--fonte2);
     font-weight: 550;
     font-variant: small-caps;
     font-size: 10vw;
+    
 }
 
 header p{
@@ -67,6 +70,7 @@ main p{
     background-size: cover;
     padding: 20px;
     box-shadow: inset 2px 2px 11px 0px #0000007a;
+    
 }
 
 #imagem_2{
@@ -77,8 +81,8 @@ main p{
 }
 
 section p{
+    display: inline-block;
     color: white;
-    max-width: 570px;
     background-color: rgba(0, 0, 0, 0.205);
     padding: 10px;
     
