@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste formulario</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="Inome">Nome:</label>
+            <input type="text" name="nome" id="Inome" autocomplete="name"
+            maxlength="30" placeholder="Nome Completo" value="Fulano Beltrano" required>
+        </p>
+        <p>
+            <label for="Imedia">Média:</label>
+            <input type="number" name="media" id="Imedia" placeholder="0 a 10" required min="0" max="10" step="0.5">
+        </p>
+        <p>
+            <label for="Imes">Periodo Letivo:</label>
+            <input type="month" name="mes" id="Imes" value="">
+        </p>
+        <p>
+            <label for="IdiaProva">Dia da Prova:</label>
+            <input type="date" name="diaProva" id="IdiaProva" value="2026-05-05">
+        </p>
+        <p>
+            <label for="Ihora">Horario da Prova</label>
+            <input type="time" name="hora" id="Ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+    let agora = new Date()
+    let mes = String(agora.getMonth() + 1).padStart(2, '0')
+    let ano = agora.getFullYear()
+    let x = document.getElementById("Imes")
+
+    x.value = `${ano}-${mes}`
+</script>
+</body>
+</html>
