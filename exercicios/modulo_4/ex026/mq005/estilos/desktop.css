@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+main article{
+    max-width: 600px;
+}
+
+menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+menu a{
+    padding: 10px;
+}
