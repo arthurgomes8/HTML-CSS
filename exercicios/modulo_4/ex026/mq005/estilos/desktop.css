@@ -4,6 +4,14 @@ main article{
     max-width: 600px;
 }
 
+#burger{
+    display: none;
+}
+
+menu{
+    display: block;
+}
+
 menu li{
     display: inline-block;
     margin-right: 10px;

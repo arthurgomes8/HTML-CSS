@@ -16,6 +16,29 @@ header{
     background-color: gray;
 }
 
+h1{
+    padding: 20px;
+    text-align: center;
+}
+
+#burger{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(36, 36, 36);
+}
+
+#burger:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+menu{
+    display: none;
+}
+
 menu>ul>li>a{
     display: block;
     text-align: center;
@@ -28,11 +51,6 @@ menu>ul>li>a{
 
 menu a:hover{
     background-color: rgb(151, 151, 151);
-}
-
-h1{
-    padding: 20px;
-    text-align: center;
 }
 
 main article{
