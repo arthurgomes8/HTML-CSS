@@ -4,7 +4,7 @@ body{
     background-image: url(../imagens/back-tv.jpg);
 }
 
-img#phone{
+img#phone,img#pc{
     display: none;
 }
 
