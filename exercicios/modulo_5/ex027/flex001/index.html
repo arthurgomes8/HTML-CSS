@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container-pai{
+            background-color: lightsalmon;
+            display:flex;
+        }
+
+        .item-filho{
+            background-color: lightblue;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            align-content: center;
+
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-pai">
+        <div class="item-filho">A</div>
+        <div class="item-filho">B</div>
+        <div class="item-filho">C</div>
+        <div class="item-filho">D</div>
+        <div class="item-filho">E</div>
+        <div class="item-filho">F</div>
+        <div class="item-filho">G</div>
+        <div class="item-filho">H</div>
+    </div>
+</body>
+</html>
