@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container-pai{
+            background-color: lightsalmon;
+            display:flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
+        }
+
+        .item-filho{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        #n1{
+            align-self: stretch;
+        }
+        #n2{
+            align-self:auto ;
+        }
+        #n3{
+            align-self: flex-end;
+        }
+        #n4{
+            align-self: auto;
+        }
+        #n5{
+            align-self: center;
+        }
+        #n6{
+            align-self: flex-end;
+        }
+        #n7{
+            align-self: stretch;
+        }
+        #n8{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-pai">
+        <div class="item-filho" id="n1">A</div>
+        <div class="item-filho" id="n2">B</div>
+        <div class="item-filho" id="n3">C</div>
+        <div class="item-filho" id="n4">D</div>
+        <div class="item-filho" id="n5">E</div>
+        <div class="item-filho" id="n6">F</div>
+        <div class="item-filho" id="n7">G</div>
+        <div class="item-filho" id="n8">H</div>
+    </div>
+</body>
+</html>
